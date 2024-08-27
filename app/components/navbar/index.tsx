@@ -35,7 +35,7 @@ const Navbar = () => {
     }, [scrollY])
 
     return (
-        <nav className={`fixed top-0 text-white flex justify-between items-center w-screen px-10 py-3 ${scrollY > 0 ? "bg-blue-200/20 backdrop-blur-md" : "bg-transparent"} transition-all duration-500`}>
+        <nav className={`fixed top-0 text-white flex justify-between items-center w-screen px-10 py-3 ${scrollY > 0 ? "bg-blue-800/20 backdrop-blur-md" : "bg-transparent"} transition-all duration-500`}>
             <Logo />
             {/* Desktop Link */}
             <div className="hidden md:flex items-center">
@@ -54,7 +54,7 @@ const Navbar = () => {
             {!navOpenOnMobile && <button className="md:hidden" onClick={() => setNavOpenOnMobile(true)}>
                 {svg.openNavSvg()}
             </button>}
-            <div className="md:hidden flex flex-col px-4 justify-center gap-5 bg-blue-200/20 backdrop-blur-md absolute right-0 top-0 h-screen w-[80%] shadow-2xl z-50" ref={scope}>
+            <div className="md:hidden flex flex-col px-4 justify-center gap-5 bg-blue-800/20 backdrop-blur-md absolute right-0 top-0 h-screen w-[80%] shadow-2xl z-50" ref={scope}>
                 <ul className="flex flex-col gap-6">
                     {navLinks.map((link, idx) => (
                         <Link key={idx} href={link.href}>

@@ -7,7 +7,7 @@ const Logo = () => {
     return (
         <div className="flex items-center">
             {svg.chevronLeft()}
-            <SparklesText text={name} className="text-[20px]" sparklesCount={7} />
+            <SparklesText text={name} className="text-[20px] text-white" sparklesCount={7} />
             {svg.slash()}
             {svg.chevronRight()}
         </div>
