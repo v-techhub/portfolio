@@ -6,7 +6,7 @@ const LeftContent = () => {
             <div><span className="text-blue-200">TS</span>&nbsp;/&nbsp;<span className="text-blue-200">JS</span> Developer</div>
             <div className="flex gap-2 items-center">
                 <div className="h-[200px] bg-blue-200 w-[2px]" />
-                <div className="text-7xl">Hello, Welcome to my portfolio</div>
+                <div className="text-6xl md:text-7xl">Hello, Welcome to my portfolio</div>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint laudantium, perferendis necessitatibus minima dolores odio soluta minus, perspiciatis quisquam provident eum ratione, reprehenderit odit deleniti! Officia ut, consequatur possimus maiores blanditiis fuga aliquam. Veniam unde vitae aliquam dolores sed iure.</p>
             <div className="border group hover:border-blue-400 transition-all duration-300 border-blue-200 shadow-2xl w-fit overflow-hidden">
