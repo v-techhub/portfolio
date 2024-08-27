@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Logo from "../ui/logo"
-import FixedGithubTop from "../ui/fixedGithubTop"
+import GitHubLink from "../ui/githubLink"
 import { useEffect, useState } from "react"
 import { useAnimate } from "framer-motion"
 import { svg } from "../svg"
@@ -48,13 +48,13 @@ const Navbar = () => {
                         </li>
                     ))}
                 </ul>
-                <FixedGithubTop />
+                <GitHubLink />
             </div>
             {/* Mobile Links */}
             {!navOpenOnMobile && <button className="md:hidden" onClick={() => setNavOpenOnMobile(true)}>
                 {svg.openNavSvg()}
             </button>}
-            <div className="md:hidden flex flex-col px-4 justify-center gap-5 bg-blue-200/20 backdrop-blur-md absolute right-0 top-0 h-screen w-[80%] shadow-2xl" ref={scope}>
+            <div className="md:hidden flex flex-col px-4 justify-center gap-5 bg-blue-200/20 backdrop-blur-md absolute right-0 top-0 h-screen w-[80%] shadow-2xl z-50" ref={scope}>
                 <ul className="flex flex-col gap-6">
                     {navLinks.map((link, idx) => (
                         <Link key={idx} href={link.href}>
@@ -62,7 +62,7 @@ const Navbar = () => {
                         </Link>
                     ))}
                 </ul>
-                <FixedGithubTop />
+                <GitHubLink />
                 <button id="close_nav" onClick={() => setNavOpenOnMobile(false)}>
                     {svg.closeNavSvg()}
                 </button>

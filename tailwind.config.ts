@@ -19,6 +19,14 @@ const config = {
     },
     extend: {
       keyframes: {
+        ripple: {
+          "0%, 100%": {
+            transform: "translate(-50%, -50%) scale(1)",
+          },
+          "50%": {
+            transform: "translate(-50%, -50%) scale(0.9)",
+          },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -29,6 +37,7 @@ const config = {
         },
       },
       animation: {
+        ripple: "ripple var(--duration,5s) ease calc(var(--i, 0)*.2s) infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
