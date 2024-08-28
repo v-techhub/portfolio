@@ -45,7 +45,7 @@ const ProjectSheet = ({ project }: { project: IListOfProjects }) => {
         github
     } = project
     return (
-        <SheetContent className="overflow-y-scroll">
+        <SheetContent className="overflow-y-scroll w-screen md:w-auto">
             <SheetHeader>
                 <SheetTitle>{projectName}</SheetTitle>
                 <SheetDescription>
@@ -95,7 +95,7 @@ const Projects = () => {
             <PageTitle text="Latest Projects" />
             <Sheet>
                 {listOfProjects.map((project, idx) => (
-                    <fieldset className="mx-auto w-[400px] md:w-[500px] h-fit md:h-[285px] rounded-2xl shadow-2xl cursor-pointer" key={idx} onClick={() => handleProjectSelection(idx)}>
+                    <fieldset className="mx-auto w-[300px] md:w-[500px] h-fit md:h-[285px] rounded-2xl shadow-2xl cursor-pointer" key={idx} onClick={() => handleProjectSelection(idx)}>
                         <SheetTrigger asChild>
                             <video width={100} height={100} loop muted autoPlay className="w-full h-full rounded-2xl">
                                 <source src={project.thumbnail} type="video/mp4" />

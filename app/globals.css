@@ -5,7 +5,6 @@
 body {
     font-size: 14px;
     scrollbar-width: none;
-    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     overflow-y: scroll;
     height: 100dvh;
@@ -14,40 +13,4 @@ body {
     &::-webkit-scrollbar {
         display: none;
     }
-}
-
-#hero {
-    scroll-snap-align: start;
-    scroll-margin-top: 20px;
-}
-
-#about {
-    scroll-snap-align: start;
-    scroll-margin-top: 20px;
-}
-
-#projects {
-    scroll-snap-align: start;
-    scroll-margin-top: 20px;
-}
-
-#testimonials {
-    scroll-snap-align: start;
-    scroll-margin-top: 20px;
-    height: 100dvh;
-}
-
-#skills {
-    scroll-snap-align: center;
-    scroll-margin-top: 20px;
-}
-
-#contact {
-    scroll-snap-align: start;
-    scroll-margin-top: 20px;
-}
-
-#footer {
-    scroll-snap-align: start;
-    scroll-margin-top: 20px;
 }
