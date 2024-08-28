@@ -45,8 +45,8 @@ const ProjectSheet = ({ project }: { project: IListOfProjects }) => {
         github
     } = project
     return (
-        <SheetContent className="overflow-y-scroll w-screen md:w-auto">
-            <SheetHeader>
+        <SheetContent className="overflow-y-scroll w-[90dvw] md:w-auto">
+            <SheetHeader className="pt-10">
                 <SheetTitle>{projectName}</SheetTitle>
                 <SheetDescription>
                     {projectOverview}
@@ -54,7 +54,7 @@ const ProjectSheet = ({ project }: { project: IListOfProjects }) => {
             </SheetHeader>
             <section className="flex flex-col gap-10">
                 <div className="h-[285px] w-full shadow-2xl mt-10">
-                    <video width={300} height={240} loop muted autoPlay className="w-full h-full rounded-lg">
+                    <video width={300} height={400} loop muted autoPlay className="w-full h-full rounded-lg">
                         <source src={thumbnail} type="video/mp4" />
                     </video>
                 </div>
@@ -95,13 +95,13 @@ const Projects = () => {
             <PageTitle text="Latest Projects" />
             <Sheet>
                 {listOfProjects.map((project, idx) => (
-                    <fieldset className="mx-auto w-[300px] md:w-[500px] h-fit md:h-[285px] rounded-2xl shadow-2xl cursor-pointer" key={idx} onClick={() => handleProjectSelection(idx)}>
-                        <SheetTrigger asChild>
-                            <video width={100} height={100} loop muted autoPlay className="w-full h-full rounded-2xl">
+                    <SheetTrigger asChild>
+                        <fieldset className="mx-auto w-[90dvw] md:w-[500px] h-[400px] md:h-[285px] rounded-2xl shadow-2xl cursor-pointer" key={idx} onClick={() => handleProjectSelection(idx)}>
+                            <video width={100} height={300} loop muted autoPlay className="w-full h-full rounded-2xl">
                                 <source src={project.thumbnail} type="video/mp4" />
                             </video>
-                        </SheetTrigger>
-                    </fieldset>
+                        </fieldset>
+                    </SheetTrigger>
                 ))}
                 <ProjectSheet project={listOfProjects[selectedProject]} />
             </Sheet>
