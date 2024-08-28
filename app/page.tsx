@@ -1,20 +1,20 @@
 import {
-  Contact,
   Footer,
   Hero,
   Projects,
   Skills,
-  Testimonials
+  Testimonials,
+  About
 } from "./components/index"
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <About />
       <Skills />
       <Projects />
       <Testimonials />
-      <Contact />
       <Footer />
     </>
   );

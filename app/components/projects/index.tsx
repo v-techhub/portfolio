@@ -1,7 +1,10 @@
+import PageTitle from "../ui/pageTitle"
 
 const Projects = () => {
     return (
-        <section className="h-screen" id="projects" >Projects</section>
+        <section className="h-screen mt-32" id="projects" >
+            <PageTitle text="Latest Projects" />
+        </section>
     )
 }
 

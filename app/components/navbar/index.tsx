@@ -35,7 +35,7 @@ const Navbar = () => {
     }, [scrollY])
 
     return (
-        <nav className={`fixed top-0 text-white flex justify-between items-center w-screen px-10 py-3 ${scrollY > 0 ? "bg-blue-800/20 backdrop-blur-md" : "bg-transparent"} transition-all duration-500`}>
+        <nav className={`fixed top-0 text-white flex justify-between items-center w-screen px-10 py-3 ${scrollY > 0 ? "bg-blue-800/20 backdrop-blur-md shadow-lg" : "bg-transparent"} z-50 transition-all duration-500 `}>
             <Logo />
             {/* Desktop Link */}
             <div className="hidden md:flex items-center">
