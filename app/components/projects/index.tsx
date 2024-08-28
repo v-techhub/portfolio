@@ -95,8 +95,8 @@ const Projects = () => {
             <PageTitle text="Latest Projects" />
             <Sheet>
                 {listOfProjects.map((project, idx) => (
-                    <SheetTrigger asChild>
-                        <fieldset className="mx-auto w-[90dvw] md:w-[500px] h-[400px] md:h-[285px] rounded-2xl shadow-2xl cursor-pointer" key={idx} onClick={() => handleProjectSelection(idx)}>
+                    <SheetTrigger asChild key={idx}>
+                        <fieldset className="mx-auto w-[90dvw] md:w-[500px] h-[400px] md:h-[285px] rounded-2xl shadow-2xl cursor-pointer" onClick={() => handleProjectSelection(idx)}>
                             <video width={100} height={300} loop muted autoPlay className="w-full h-full rounded-2xl">
                                 <source src={project.thumbnail} type="video/mp4" />
                             </video>
