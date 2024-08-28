@@ -8,11 +8,11 @@ import { useAnimate } from "framer-motion"
 import { svg } from "../svg"
 
 const navLinks = [
-    { name: "Home", href: "/" },
+    { name: "Home", href: "#hero" },
+    { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
     { name: "Skills", href: "#skills" },
     { name: "Testimonials", href: "#testimonials" },
-    { name: "Contact", href: "#contact" },
 ]
 
 const Navbar = () => {

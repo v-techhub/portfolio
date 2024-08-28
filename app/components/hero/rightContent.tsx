@@ -4,10 +4,21 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import { EffectCards } from 'swiper/modules';
+import { motion } from "framer-motion"
 
 const RightContent = () => {
     return (
-        <div className="flex-1">
+        <motion.div
+            initial={{
+                opacity: 0,
+                x: 50
+            }}
+            animate={{
+                opacity: 1,
+                x: 0,
+                transition: { delay: 2 }
+            }}
+            className="flex-1">
             <Swiper
                 effect={'cards'}
                 grabCursor={true}
@@ -16,7 +27,7 @@ const RightContent = () => {
             >
                 <SwiperSlide>
                     <img
-                        src="/me_1.jpg"
+                        src="/me_3.jpg"
                         alt="Image 1"
                     />
                 </SwiperSlide>
@@ -28,7 +39,7 @@ const RightContent = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <img
-                        src="/me_3.jpg"
+                        src="/me_1.jpg"
                         alt="Image 3"
                     />
                 </SwiperSlide>
@@ -45,7 +56,7 @@ const RightContent = () => {
                     />
                 </SwiperSlide>
             </Swiper>
-        </div>
+        </motion.div>
     )
 }
 

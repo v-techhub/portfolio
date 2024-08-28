@@ -69,7 +69,7 @@ const ReviewCard = ({
 
 export default function Testimonials() {
     return (
-        <section className="">
+        <section className="my-5" id="testimonials">
             <PageTitle text="Testimonials" />
             <div className="relative flex h-fit w-full flex-col items-center justify-center overflow-hidden border">
                 <Marquee pauseOnHover className="[--duration:20s]">

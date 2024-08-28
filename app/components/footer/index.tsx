@@ -4,7 +4,7 @@ import { FaLinkedin, FaFacebookF, FaSquareInstagram } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <footer className="bg-blue-900 flex gap-5 md:flex-row flex-col text-white px-10 md:px-20 py-5 mt-32">
+        <footer id="footer" className="bg-blue-900 flex gap-5 md:flex-row flex-col text-white px-10 md:px-20 py-5 mt-32">
             <section className="flex-1 flex-col flex gap-5">
                 <Logo />
                 <p className="mt-3 text-gray-300 hover:text-white transition-all">
