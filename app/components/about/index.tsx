@@ -5,10 +5,13 @@ const About = () => {
     return (
         <section id="about" className="z-10 h-fit">
             <PageTitle text="About Me" />
-            <TextReveal text={`Hello! I'm a passionate and dedicated software developer who embarked on this exciting journey in January 2023. With a strong foundation in frontend development, I'm steadily expanding my skills towards becoming a full-stack developer and venturing into mobile development using React Native.
-My journey has been greatly influenced by my mentor, Mr.Gbenga, also known as "iCode," a seasoned professional in the software development industry.Under his guidance, I've gained valuable insights and honed my coding skills, which have been pivotal in shaping my career.
-Driven by a love for learning and a commitment to growth, I'm constantly exploring new technologies and methodologies. My ultimate goal is to create impactful and innovative software solutions that make a difference. Whether it's building dynamic web applications or diving into the world of mobile development, I'm eager to tackle new challenges and push the boundaries of what's possible in the tech world.
-Thank you for visiting my portfolio.I look forward to connecting and exploring opportunities to collaborate on exciting projects!.`}
+            <TextReveal text={`Welcome to my portfolio! As a dedicated and passionate software developer, I began my journey in January 2023 with a strong focus on frontend development. I'm now expanding my expertise to become a full-stack developer and exploring mobile development with React Native.
+
+            I'm grateful for the mentorship of Mr. Gbenga ('iCode'), a seasoned industry professional who has provided invaluable guidance and insights. Under his mentorship, I've refined my coding skills and gained a deeper understanding of software development.
+
+            With a passion for learning and growth, I'm committed to staying up-to-date with the latest technologies and methodologies. My goal is to create innovative software solutions that drive impact and make a meaningful difference.
+
+            I'm excited to take on new challenges, push boundaries, and collaborate on exciting projects. Thank you for visiting my portfolio. I look forward to connecting and exploring opportunities to work together!.`}
             />
         </section>
     )
