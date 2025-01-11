@@ -27,6 +27,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-//FEATURES
-//1. Custom Loader
