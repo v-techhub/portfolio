@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
         <div className="flex gap-4 text-xl">
           <Link
-            href="https://ng.linkedin.com/in/adeshina-victor-a4019304"
+            href="https://www.linkedin.com/in/adeshina-victor-a40191304"
             className="hover:text-blue-500 transition-all hover:scale-110 duration-500"
           >
             <FaLinkedin />
